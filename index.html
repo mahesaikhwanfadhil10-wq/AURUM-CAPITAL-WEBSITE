@@ -1,0 +1,1108 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AURUM CAPITAL — Trade Smarter. Grow Together.</title>
+
+    <!-- =====================================================
+         GOOGLE FONTS
+    ====================================================== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- =====================================================
+         FONT AWESOME
+    ====================================================== -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+    <!-- =====================================================
+         MAIN CSS
+    ====================================================== -->
+    <link
+        rel="stylesheet"
+        href="{{ url_for('static', filename='style.css') }}"
+    >
+</head>
+
+<body>
+
+    <!-- =====================================================
+     VIDEO BACKGROUND
+====================================================== -->
+<div class="background">
+
+    <video
+        class="background-video"
+        autoplay
+        muted
+        loop
+        playsinline
+        preload="auto"
+    >
+        <source
+            src="{{ url_for('static', filename='videos/aurum-bg.mp4') }}"
+            type="video/mp4"
+        >
+    </video>
+
+    <div class="background-overlay"></div>
+
+</div>
+
+
+    <!-- =====================================================
+         NAVBAR
+    ====================================================== -->
+    <header class="navbar">
+
+        <!-- BRAND -->
+        <a href="#home" class="brand">
+
+            <img
+                src="{{ url_for('static', filename='images/A.png') }}"
+                alt="Aurum Capital"
+                class="nav-logo"
+            >
+
+            <div class="brand-text">
+                <span class="brand-name">AURUM</span>
+                <span class="brand-capital">CAPITAL</span>
+            </div>
+
+        </a>
+
+
+        <!-- NAVIGATION -->
+        <nav
+            class="navigation"
+            aria-label="Main Navigation"
+        >
+
+            <a href="#home" class="nav-link">HOME</a>
+            <a href="#about" class="nav-link">ABOUT</a>
+            <a href="#benefit" class="nav-link">BENEFIT</a>
+            <a href="#broker" class="nav-link">BROKER</a>
+            <a href="#calendar" class="nav-link">CALENDAR</a>
+            <a href="#technical" class="nav-link">TECHNICAL</a>
+            <a href="#community" class="nav-link">COMMUNITY</a>
+
+        </nav>
+
+
+        <!-- JOIN COMMUNITY -->
+        <a
+            href="#community"
+            class="join-button"
+        >
+            <span>JOIN COMMUNITY</span>
+            <i class="fa-solid fa-user-group"></i>
+        </a>
+
+    </header>
+
+
+    <!-- =====================================================
+         TRADINGVIEW TICKER
+    ====================================================== -->
+    <section class="ticker">
+
+        <div class="ticker-viewport">
+
+            <tv-ticker-tape
+                symbols="FX:GBPUSD,FX:USDJPY,FX:AUDUSD,FX:USDCAD,TVC:USOIL,BITSTAMP:BTCUSD,OANDA:XAUUSD"
+                theme="dark"
+                transparent="true">
+            </tv-ticker-tape>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         TRADINGVIEW SCRIPT
+    ====================================================== -->
+    <script
+        type="module"
+        src="https://widgets.tradingview-widget.com/w/en/tv-ticker-tape.js">
+    </script>
+
+
+    <!-- =====================================================
+         HERO
+    ====================================================== -->
+    <main id="home" class="hero">
+
+        <div class="hero-content">
+
+            <!-- TITLE -->
+            <h1 class="hero-title">
+                AURUM
+            </h1>
+
+
+            <!-- CAPITAL -->
+            <div class="hero-capital">
+                CAPITAL
+            </div>
+
+
+            <!-- GOLD LINE -->
+            <div class="gold-line">
+
+                <span></span>
+                <i></i>
+                <span></span>
+
+            </div>
+
+
+            <!-- TAGLINE -->
+            <p class="hero-tagline">
+                TRADE SMARTER. GROW TOGETHER.
+            </p>
+
+
+            <!-- FEATURES -->
+            <div class="hero-features">
+
+                <span>Technical Analysis</span>
+                <b>|</b>
+
+                <span>Fundamental Analysis</span>
+                <b>|</b>
+
+                <span>Geopolitical Analysis</span>
+                <b>|</b>
+
+                <span>US Economic Data</span>
+
+            </div>
+
+
+            <!-- CTA BUTTONS -->
+            <div class="hero-actions">
+
+                <!-- WHATSAPP -->
+<a
+    href="https://wa.me/6288291064100"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="hero-button whatsapp"
+>
+    <i class="fa-brands fa-whatsapp"></i>
+    <span>JOIN WHATSAPP</span>
+</a>
+
+
+<!-- TELEGRAM -->
+<a
+    href="https://t.me/Fadhilfxtrade"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="hero-button telegram"
+>
+    <i class="fa-brands fa-telegram"></i>
+    <span>JOIN TELEGRAM</span>
+</a>
+
+            </div>
+
+        </div>
+
+
+        <!-- =================================================
+             SCROLL INDICATOR
+        ================================================== -->
+        <div class="scroll-indicator">
+
+            <div class="mouse">
+                <span></span>
+            </div>
+
+            <span class="scroll-label">
+                SCROLL TO EXPLORE
+            </span>
+
+            <i class="fa-solid fa-chevron-down"></i>
+
+        </div>
+
+    </main>
+
+
+    <!-- =====================================================
+     ABOUT AURUM CAPITAL
+====================================================== -->
+<section id="about" class="about-section">
+
+    <div class="about-container">
+
+        <!-- HEADER -->
+        <div class="about-header">
+
+            <span class="about-kicker">
+                TENTANG AURUM CAPITAL
+            </span>
+
+            <h2 class="about-title">
+                MELIHAT PASAR
+                <span>LEBIH JAUH.</span>
+            </h2>
+
+            <p class="about-subtitle">
+                Memahami market bukan hanya tentang melihat pergerakan harga.
+            </p>
+
+            <div class="about-line"></div>
+
+        </div>
+
+
+        <!-- MAIN CONTENT -->
+        <div class="about-grid">
+
+            <!-- LEFT -->
+            <div class="about-copy">
+
+                <p class="about-lead">
+                    Aurum Capital hadir untuk membantu trader
+                    melihat market dari perspektif yang lebih luas.
+                </p>
+
+                <p>
+                    Kami menggabungkan technical analysis,
+                    fundamental analysis, perkembangan geopolitik,
+                    dan economic data untuk membangun pemahaman
+                    market yang lebih terstruktur.
+                </p>
+
+                <p>
+                    Dengan melihat berbagai faktor yang saling
+                    berhubungan, trader dapat memahami bukan hanya
+                    <strong>apa yang terjadi di market</strong>,
+                    tetapi juga <strong>mengapa hal tersebut terjadi.</strong>
+                </p>
+
+            </div>
+
+
+            <!-- RIGHT -->
+            <div class="about-focus">
+
+                <div class="about-card">
+
+                    <div class="about-card-number">
+                        01
+                    </div>
+
+                    <div>
+                        <h3>TECHNICAL</h3>
+
+                        <p>
+                            Price action, market structure,
+                            momentum, dan key levels.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="about-card">
+
+                    <div class="about-card-number">
+                        02
+                    </div>
+
+                    <div>
+                        <h3>FUNDAMENTAL</h3>
+
+                        <p>
+                            Data ekonomi, monetary policy,
+                            dan market fundamentals.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="about-card">
+
+                    <div class="about-card-number">
+                        03
+                    </div>
+
+                    <div>
+                        <h3>GEOPOLITICAL</h3>
+
+                        <p>
+                            Perkembangan global dan dampaknya
+                            terhadap financial markets.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="about-card">
+
+                    <div class="about-card-number">
+                        04
+                    </div>
+
+                    <div>
+                        <h3>ECONOMIC DATA</h3>
+
+                        <p>
+                            US economic releases dan global
+                            macro indicators.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+    <!-- =====================================================
+     BENEFIT AURUM CAPITAL
+====================================================== -->
+<section id="benefit" class="benefit-section">
+
+    <div class="benefit-container">
+
+        <!-- HEADER -->
+        <div class="benefit-header">
+
+            <span class="benefit-kicker">
+                KEUNTUNGAN BERSAMA AURUM CAPITAL
+            </span>
+
+            <h2 class="benefit-title">
+    TRADING DENGAN
+    <span>LEBIH JELAS.</span>
+</h2>
+
+<p class="benefit-subtitle">
+    Bukan sekadar informasi market, tetapi insight
+    yang membantu trader memahami konteks di balik pergerakan harga.
+</p>
+
+            <div class="benefit-line"></div>
+
+        </div>
+
+
+        <!-- BENEFIT GRID -->
+        <div class="benefit-grid">
+
+            <!-- 01 -->
+            <article class="benefit-card">
+
+                <div class="benefit-number">
+                    01
+                </div>
+
+                <div class="benefit-icon">
+                    <i class="fa-solid fa-chart-line"></i>
+                </div>
+
+                <h3>
+                    MARKET INSIGHT
+                </h3>
+
+                <p>
+                    Mendapatkan perspektif market yang lebih luas
+                    melalui technical, fundamental, geopolitical,
+                    dan economic analysis.
+                </p>
+
+            </article>
+
+
+            <!-- 02 -->
+            <article class="benefit-card">
+
+                <div class="benefit-number">
+                    02
+                </div>
+
+                <div class="benefit-icon">
+                    <i class="fa-solid fa-bullseye"></i>
+                </div>
+
+                <h3>
+                    ACTIONABLE ANALYSIS
+                </h3>
+
+                <p>
+                    Insight disusun secara terstruktur agar lebih
+                    mudah dipahami dan digunakan sebagai bahan
+                    pertimbangan dalam mengambil keputusan.
+                </p>
+
+            </article>
+
+
+            <!-- 03 -->
+            <article class="benefit-card">
+
+                <div class="benefit-number">
+                    03
+                </div>
+
+                <div class="benefit-icon">
+                    <i class="fa-solid fa-earth-americas"></i>
+                </div>
+
+                <h3>
+                    GLOBAL PERSPECTIVE
+                </h3>
+
+                <p>
+                    Melihat market dari konteks global, termasuk
+                    perkembangan ekonomi, kebijakan moneter,
+                    dan geopolitik.
+                </p>
+
+            </article>
+
+
+            <!-- 04 -->
+            <article class="benefit-card">
+
+                <div class="benefit-number">
+                    04
+                </div>
+
+                <div class="benefit-icon">
+                    <i class="fa-solid fa-users"></i>
+                </div>
+
+                <h3>
+                    COMMUNITY ACCESS
+                </h3>
+
+                <p>
+                    Terhubung dengan komunitas untuk berbagi
+                    market discussion, insight, dan perspektif
+                    bersama.
+                </p>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+    <!-- =====================================================
+     BROKER
+====================================================== -->
+<section id="broker" class="broker-section">
+
+    <div class="broker-container">
+
+        <!-- HEADER -->
+        <div class="broker-header">
+
+            <span class="broker-kicker">
+                BROKER TRADING
+            </span>
+
+            <h2 class="broker-title">
+                PILIH BROKER
+                <span>TRADING ANDA.</span>
+            </h2>
+
+            <p class="broker-subtitle">
+                Temukan broker yang dapat digunakan
+                sesuai kebutuhan dan gaya trading Anda.
+            </p>
+
+            <div class="broker-line"></div>
+
+        </div>
+
+
+        <!-- BROKER CARDS -->
+        <div class="broker-grid">
+
+
+            <!-- =================================================
+                 EXNESS
+            ================================================== -->
+            <article class="broker-card">
+
+                <div class="broker-card-top">
+
+                    <span class="broker-number">
+                        01
+                    </span>
+
+                    <span class="broker-label">
+                        BROKER PARTNER
+                    </span>
+
+                </div>
+
+
+                <div class="broker-card-content">
+
+                    <h3>
+                        EXNESS
+                    </h3>
+
+                    <p>
+                        Gunakan kode mitra berikut saat melakukan
+                        pendaftaran melalui link partner.
+                    </p>
+
+
+                    <div class="partner-code">
+
+                        <span>
+                            KODE MITRA
+                        </span>
+
+                        <strong>
+                            7g2f68yghz
+                        </strong>
+
+                    </div>
+
+
+                    <a
+                        href="https://one.exnesstrack.org/a/7g2f68yghz"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="broker-button"
+                    >
+                        <span>DAFTAR DI EXNESS</span>
+
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- =================================================
+                 PU PRIME
+            ================================================== -->
+            <article class="broker-card">
+
+                <div class="broker-card-top">
+
+                    <span class="broker-number">
+                        02
+                    </span>
+
+                    <span class="broker-label">
+                        BROKER PARTNER
+                    </span>
+
+                </div>
+
+
+                <div class="broker-card-content">
+
+                    <h3>
+                        PU PRIME
+                    </h3>
+
+                    <p>
+                        Gunakan kode mitra berikut saat melakukan
+                        pendaftaran melalui link partner.
+                    </p>
+
+
+                    <div class="partner-code">
+
+                        <span>
+                            KODE MITRA
+                        </span>
+
+                        <strong>
+                            R0sTmpr6
+                        </strong>
+
+                    </div>
+
+
+                    <a
+                        href="https://puvip.co/la-partners/id/R0sTmpr6"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="broker-button"
+                    >
+                        <span>DAFTAR DI PU PRIME</span>
+
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+   <!-- =====================================================
+     ECONOMIC CALENDAR
+====================================================== -->
+<section id="calendar" class="calendar-section">
+
+    <div class="calendar-container">
+
+        <div class="calendar-header">
+
+            <span class="calendar-kicker">
+                KALENDER EKONOMI
+            </span>
+
+            <h2 class="calendar-title">
+                ECONOMIC
+                <span>CALENDAR.</span>
+            </h2>
+
+            <p class="calendar-subtitle">
+                Pantau agenda dan data ekonomi global,
+                lengkap dengan Actual, Forecast, dan Previous.
+            </p>
+
+            <div class="calendar-line"></div>
+
+        </div>
+
+        <!-- TRADINGVIEW -->
+        <div class="tradingview-calendar">
+
+            <div
+                id="tradingview-economic-calendar"
+                class="tradingview-widget-container"
+            ></div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<script
+    src="{{ url_for('static', filename='calendar.js') }}"
+    defer
+></script>
+
+<!-- =====================================================
+     TRADINGVIEW CALENDAR SCRIPT
+====================================================== -->
+<script
+    src="{{ url_for('static', filename='calendar.js') }}"
+    defer>
+</script>
+    
+
+<!-- =====================================================
+     TECHNICAL ANALYSIS
+====================================================== -->
+<section id="technical" class="technical-section">
+
+    <div class="technical-container">
+
+        <!-- HEADER -->
+        <div class="technical-header">
+
+            <span class="technical-kicker">
+                MARKET ANALYSIS
+            </span>
+
+            <h2 class="technical-title">
+                UPDATE
+                <span>ANALISA MARKET.</span>
+            </h2>
+
+            <p class="technical-subtitle">
+                Pantau technical rating berdasarkan data TradingView
+                dan pilih market yang ingin dianalisis.
+            </p>
+
+            <div class="technical-line"></div>
+
+        </div>
+
+
+        <!-- CONTENT -->
+        <div class="technical-analysis-grid">
+
+            <!-- LEFT -->
+            <div class="technical-analysis-copy">
+
+                <span
+                    id="technical-symbol-label"
+                    class="technical-symbol-label"
+                >
+                    XAUUSD
+                </span>
+
+                <h3
+                    id="technical-market-name"
+                    class="technical-analysis-title"
+                >
+                    GOLD / U.S. DOLLAR
+                </h3>
+
+                <p class="technical-analysis-text">
+                    Technical rating mengikuti data TradingView
+                    dan dapat berubah mengikuti kondisi market.
+                </p>
+
+
+                <div class="technical-principles">
+
+                    <div class="technical-principle">
+
+                        <span>01</span>
+
+                        <div>
+                            <h4>MARKET STRUCTURE</h4>
+
+                            <p>
+                                Membaca trend, support,
+                                resistance, dan perubahan struktur.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="technical-principle">
+
+                        <span>02</span>
+
+                        <div>
+                            <h4>PRICE ACTION</h4>
+
+                            <p>
+                                Mengamati pola pergerakan harga
+                                dan momentum market.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="technical-principle">
+
+                        <span>03</span>
+
+                        <div>
+                            <h4>KEY LEVELS</h4>
+
+                            <p>
+                                Menentukan area penting sebagai
+                                acuan dalam menyusun setup.
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- RIGHT -->
+            <div class="technical-analysis-widget">
+
+                <div class="technical-widget-header">
+
+                    <div>
+
+                        <span>
+                            TRADINGVIEW
+                        </span>
+
+                        <h3>
+                            TECHNICAL RATING
+                        </h3>
+
+                    </div>
+
+
+                    <div class="technical-live-dot">
+
+                        <i></i>
+
+                        LIVE
+
+                    </div>
+
+                </div>
+
+
+                <!-- MARKET SELECTOR -->
+                <div class="technical-market-control">
+
+                    <label
+                        for="technical-market"
+                        class="technical-market-label"
+                    >
+                        MARKET
+                    </label>
+
+                    <select
+                        id="technical-market"
+                        class="technical-market-select"
+                    >
+
+                        <option value="OANDA:XAUUSD">
+                            XAUUSD — Gold / USD
+                        </option>
+
+                        <option value="OANDA:EURUSD">
+                            EURUSD — Euro / USD
+                        </option>
+
+                        <option value="OANDA:GBPUSD">
+                            GBPUSD — Pound / USD
+                        </option>
+
+                        <option value="OANDA:USDJPY">
+                            USDJPY — USD / JPY
+                        </option>
+
+                        <option value="BITSTAMP:BTCUSD">
+                            BTCUSD — Bitcoin / USD
+                        </option>
+
+                        <option value="TVC:USOIL">
+                            USOIL — Crude Oil
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- TRADINGVIEW WIDGET -->
+                <div class="technical-widget-body">
+
+                    <tv-technical-analysis
+                        id="technical-rating"
+                        symbol="OANDA:XAUUSD"
+                        interval="1h"
+                        display-mode="single"
+                        theme="dark"
+                        locale="en"
+                    ></tv-technical-analysis>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- CTA -->
+        <div class="technical-cta">
+
+            <a
+                id="technical-live-link"
+                href="https://www.tradingview.com/symbols/XAUUSD/technicals/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="technical-live-button"
+            >
+                <span>OPEN LIVE ANALYSIS</span>
+
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     TRADINGVIEW TECHNICAL ANALYSIS
+====================================================== -->
+<script
+    type="module"
+    src="https://widgets.tradingview-widget.com/w/en/tv-technical-analysis.js"
+></script>
+
+<script
+    src="{{ url_for('static', filename='technical-analysis.js') }}"
+    defer
+></script>
+
+    <!-- =====================================================
+     COMMUNITY
+====================================================== -->
+<section id="community" class="community-section">
+
+    <div class="community-container">
+
+        <!-- HEADER -->
+        <div class="community-header">
+
+            <span class="community-kicker">
+                AURUM CAPITAL COMMUNITY
+            </span>
+
+            <h2 class="community-title">
+                GROW
+                <span>TOGETHER.</span>
+            </h2>
+
+            <p class="community-subtitle">
+                Bergabung dengan komunitas Aurum Capital untuk
+                mendapatkan market discussion, update, dan
+                terhubung dengan trader lainnya.
+            </p>
+
+            <div class="community-line"></div>
+
+        </div>
+
+
+        <!-- COMMUNITY OPTIONS -->
+        <div class="community-grid">
+
+
+            <!-- WHATSAPP -->
+            <a
+                href="https://wa.me/6288291064100"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="community-card"
+            >
+
+                <div class="community-card-icon whatsapp-icon">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </div>
+
+                <div class="community-card-content">
+
+                    <span>
+                        COMMUNITY
+                    </span>
+
+                    <h3>
+                        WHATSAPP
+                    </h3>
+
+                    <p>
+                        Bergabung untuk mendapatkan update
+                        dan diskusi market bersama komunitas.
+                    </p>
+
+                </div>
+
+                <i class="fa-solid fa-arrow-up-right-from-square community-arrow"></i>
+
+            </a>
+
+
+            <!-- TELEGRAM -->
+            <a
+                href="https://t.me/Fadhilfxtrade"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="community-card"
+            >
+
+                <div class="community-card-icon telegram-icon">
+                    <i class="fa-brands fa-telegram"></i>
+                </div>
+
+                <div class="community-card-content">
+
+                    <span>
+                        COMMUNITY
+                    </span>
+
+                    <h3>
+                        TELEGRAM
+                    </h3>
+
+                    <p>
+                        Ikuti channel untuk menerima informasi
+                        dan pembahasan market terbaru.
+                    </p>
+
+                </div>
+
+                <i class="fa-solid fa-arrow-up-right-from-square community-arrow"></i>
+
+            </a>
+
+        </div>
+
+
+        <!-- BOTTOM NOTE -->
+        <div class="community-note">
+
+            <span>
+                TRADE SMARTER. GROW TOGETHER.
+            </span>
+
+        </div>
+
+    </div>
+
+</section>
+
+    <!-- =====================================================
+         NAVIGATION ACTIVE STATE
+    ====================================================== -->
+    <script>
+
+        const navLinks = document.querySelectorAll(".nav-link");
+
+        navLinks.forEach((link) => {
+
+            link.addEventListener("click", () => {
+
+                navLinks.forEach((item) => {
+                    item.classList.remove("active");
+                });
+
+                link.classList.add("active");
+
+            });
+
+        });
+
+    </script>
+    
+
+</body>
+
+</html>
